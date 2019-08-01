@@ -8,6 +8,19 @@
 body {
   background: #0;
 }
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    }
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+    
 @media screen and (min-width: 700px) {  
 .content {
   max-width: 900px;
@@ -15,6 +28,9 @@ body {
   background: black;
   padding: 10px;
 }
+ .column {
+        width: 100%;
+ }
   }
   
 </style>
@@ -27,8 +43,20 @@ body {
   #################################</p>
   
   <p><i>the idea would be to have photos of each zine cover here, and they could be clicked through to actually read the zine. photos as opposed to scans tho</i></p>
-  
-    <p><img src="AFZU1106.JPG" width="400" alt="sk8 lyfe"> <img src="RPTM9488.JPG" width="400" alt="in pursuit of a waffle house lexicography"></p>
+   
+<div class="row">
+  <div class="column">
+    <p><img src="RPTM9488.JPG" width="400" alt="in pursuit of a waffle house lexicography"><br>
+        <small><i>in pursuit of a waffle house lexicography</i>, 2019</small></p>
+  </div>
+  <div class="column">
+    <p><img src="AFZU1106.JPG" width="400" alt="sk8 lyfe"><br>
+        <small><i>sk8 lyfe</i>, 2018</small></p>
+  </div>
+</div>    
+    
+    
+    
     
    <p><a href="http://tyrianrex.github.io/">home</a>  
   </font>
